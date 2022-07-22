@@ -49,6 +49,7 @@ class CourseController extends Controller
         $course = Course::create($data);
 
         $group_data = [
+            'student_id' => 0,
             'name' => $course->name . ' study group',
             'description' => 'This will help you learn ' . $course->name . ' better and easily at your pace'
         ];
